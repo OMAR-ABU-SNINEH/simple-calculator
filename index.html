@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link
+      rel="shortcut icon"
+      href="assets/calculator.ico"
+      type="image/x-icon"
+    />
+    <!-- <link rel="icon" type="image/x-icon" href="assets/calculator.ico"> -->
+    <title>CalculatorJS</title>
+  </head>
+  <body>
+    <div class="main">
+      <div class="rows">
+        <div class="rows-cont">
+          <h1 class="header">CalculatorJS</h1>
+          <div class="top">
+            <a href="https://github.com/zxcodes/JavaScript-Calculator"
+              ><img
+                src="assets/GitHubLight.svg"
+                alt="Sun Icon"
+                height="22.5"
+                width="22.5"
+                id="github-icon"
+            /></a>
+            <button type="button" onclick="changeTheme()" class="theme-button">
+              <img
+                src="assets/SunIcon.svg"
+                alt="Theme Icon"
+                height="19"
+                width="19"
+                id="theme-icon"
+              />
+            </button>
+          </div>
+        </div>
+
+        <div class="row1">
+          <input
+            type="text"
+            name="result"
+            id="result"
+            placeholder="Result"
+            readonly
+          />
+          <input
+            type="button"
+            value="C"
+            onclick="liveScreen('c')"
+            id="clear-button"
+          />
+        </div>
+        <div class="row2">
+          <input type="button" value="1" onclick="liveScreen(1)" />
+          <input type="button" value="2" onclick="liveScreen(2)" />
+          <input type="button" value="3" onclick="liveScreen(3)" />
+          <input type="button" value="+" onclick="liveScreen('+')" />
+        </div>
+        <div class="row3">
+          <input type="button" value="4" onclick=" liveScreen(4)" />
+          <input type="button" value="5" onclick=" liveScreen(5)" />
+          <input type="button" value="6" onclick=" liveScreen(6)" />
+          <input type="button" value="-" onclick="liveScreen('-')" />
+        </div>
+        <div class="row4">
+          <input type="button" value="7" onclick="liveScreen(7)" />
+          <input type="button" value="8" onclick="liveScreen(8)" />
+          <input type="button" value="9" onclick=" liveScreen(9)" />
+          <input type="button" value="x" onclick="liveScreen('*')" />
+        </div>
+        <div class="row5">
+          <input type="button" value="/" onclick="liveScreen('/')" />
+          <input type="button" value="0" onclick="liveScreen(0)" />
+          <input type="button" value="." onclick="liveScreen('.')" />
+          <input type="button" value="=" onclick="liveScreen('=')" />
+        </div>
+      </div>
+    </div>
+    <script src="scripts/script.js"></script>
+  </body>
+</html>
